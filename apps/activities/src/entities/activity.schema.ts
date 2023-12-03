@@ -3,16 +3,31 @@ import { AbstractDocument } from "libs/common/src";
 
 @Schema({ versionKey: false })
 export class ActivityDocument extends AbstractDocument {
+
     @Prop()
     timestamp: Date;
+
     @Prop()
     startDate: Date;
+
     @Prop()
     endDate: Date;
+
     @Prop()
     userId: string;
+
+    @Prop()
+    activityType: string;
+
     @Prop()
     placeId: string;
+
+    @Prop()
+    coordinates: Object;
+
+    @Prop()
+    distance: number;
+
     @Prop()
     invoiceId: string;
 }
