@@ -3,7 +3,7 @@ import { ActivitiesService } from './activities.service';
 import { ActivitiesController } from './activities.controller';
 import { DatabaseModule, LoggerModule } from '@app/common';
 import { ActivitiesRepository } from './activities.repository';
-import { ActivityDocument, ActivitySchema } from './entities/activity.schema';
+import { ActivityDocument, ActivitySchema } from './models/activity.schema';
 
 @Module({
   imports: [
