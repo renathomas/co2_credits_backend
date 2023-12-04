@@ -22,8 +22,8 @@ export class ActivityDocument extends AbstractDocument {
     @Prop()
     placeId: string;
 
-    @Prop()
-    coordinates: Object;
+    @Prop({ type: Object })
+    coordinates: { lat: number; long: number };
 
     @Prop()
     distance: number;
