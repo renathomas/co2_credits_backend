@@ -1,0 +1,13 @@
+services:
+  activities:
+    build:
+      context: .
+      dockerfile: ./apps/activities/Dockerfile
+      target: development
+    command: npm run start:dev activities
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/src/app
+  mongo:
+    image: mongo
