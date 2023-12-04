@@ -1,6 +1,6 @@
 import { Injectable, Logger } from "@nestjs/common";
 import { AbstractReository } from "@app/common";
-import { ActivityDocument } from "./entities/activity.schema";
+import { ActivityDocument } from "./models/activity.schema";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
 
