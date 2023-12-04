@@ -1,0 +1,23 @@
+services:
+  activities:
+    build:
+      context: .
+      dockerfile: ./apps/activities/Dockerfile
+      target: development
+    command: npm run start:dev activities -- --poll
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/src/app
+  auth:
+    build:
+      context: .
+      dockerfile: ./apps/auth/Dockerfile
+      target: development
+    command: npm run start:dev auth -- --poll
+    ports:
+      - '3001:3001'
+    volumes:
+      - .:/usr/src/app
+  mongo:
+    image: mongo

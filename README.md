@@ -1,13 +1,47 @@
-# user-carbon-credits
-to run this project ensure you have the following:
-- Nest JS
-- MongoDB
-- Docker
-- Optional (But recommended): Postman
+## Installation
 
-To run project:
-- Clone project 
-- cd into the root of the project and run:
-  - npm install
-  - docker-compose up --build
-  - > Alternatively, you can run: nest start --watch
+```bash
+$ npm install
+```
+
+## Running the app
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+
+#Docker mode
+$ docker-compose up
+```
+
+## Test
+
+```bash
+# unit tests
+$ npm run test
+
+# e2e tests
+$ npm run test:e2e
+
+# test coverage
+$ npm run test:cov
+```
+
+## Support
+
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Rena Thomas]
+- Twitter - [@RenaThomas]
+
+## License
+
+This is [MIT licensed](LICENSE).
